@@ -5,8 +5,8 @@ metadata:
   namespace: argocd
 spec:
   source:
-    path: manifest
-    repourl: 'https://github.com/pankajadas/atlas-argocd-demo.git'
+    path: manifests
+    repoURL: 'https://github.com/pankajadas/atlas-argocd-demo'
     targetRevision: main
   destination:
     namespace: default
