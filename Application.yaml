@@ -6,7 +6,7 @@ metadata:
 spec:
   source:
     path: manifests
-    repoURL: 'https://github.com/pankajadas/atlas-argocd-demo'
+    repoURL: https://github.com/pankajadas/atlas-argocd-demo
     targetRevision: main
   destination:
     namespace: default
