@@ -9,7 +9,7 @@ spec:
     - port: 3306
   selector:
     app: mysql
-  ClusterIP: None
+  clusterIP: None
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -42,8 +42,8 @@ spec:
           livenessProbe:
             tcpSocket:
               port: 3306
-              initialDelaySeconds: 15
-              periodSeconds: 15
+            initialDelaySeconds: 15
+            periodSeconds: 15
           ports:
             - containerPort: 3306
               name: mysql
